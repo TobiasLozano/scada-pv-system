@@ -1,118 +1,383 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="900" height="420" viewBox="0 0 900 420">
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="900"
+   height="500"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.92.4"
+   onload="var src; if (document.documentURI) src = document.documentURI; else if (this.getSrc) src = this.getSrc(); else src = document.location.href + ''; try {parent.preload.load(src);}catch(e) {};"
+   sodipodi:docname="fotovoltaico.svg">
 
-  <style>
-    text { font-family: Arial, sans-serif; fill: #ffffff; }
-    .label { font-size: 12px; }
-    .value { font-size: 14px; font-weight: bold; fill: #00ffcc; }
-    .title { font-size: 16px; font-weight: bold; }
-    .line { stroke: #888; stroke-width: 3; }
-  </style>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#0b0f1a"
+     inkscape:current-layer="layer1" />
 
-  <!-- Fondo -->
-  <rect width="900" height="420" fill="#0b0f1a"/>
+  <defs id="defs4">
+    <!-- Gradiente fondo -->
+    <linearGradient id="bgGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" style="stop-color:#0b0f1a;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#111827;stop-opacity:1"/>
+    </linearGradient>
+    <!-- Gradiente panel solar -->
+    <linearGradient id="panelGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" style="stop-color:#1e3a5f;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#0d2040;stop-opacity:1"/>
+    </linearGradient>
+    <!-- Marcador flecha -->
+    <marker id="arrowGreen" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto">
+      <path d="M0,0 L0,8 L8,4 Z" fill="#00ff88"/>
+    </marker>
+    <marker id="arrowOrange" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto">
+      <path d="M0,0 L0,8 L8,4 Z" fill="#ff8800"/>
+    </marker>
+    <marker id="arrowBlue" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto">
+      <path d="M0,0 L0,8 L8,4 Z" fill="#00aaff"/>
+    </marker>
+  </defs>
 
-  <!-- ================= PANEL SOLAR ================= -->
-  <text class="title" x="80" y="40">Panel Solar</text>
+  <g inkscape:label="Layer 1" inkscape:groupmode="layer" id="layer1">
 
-  <rect x="50" y="60" width="180" height="120" fill="#1e3a5f" stroke="#00aaff" stroke-width="2"/>
+    <!-- ================================================================
+         FONDO
+    ================================================================ -->
+    <rect width="900" height="500" fill="url(#bgGrad)" id="fondo"/>
 
-  <!-- Celdas -->
-  <g stroke="#00ccff" stroke-width="1">
-    <line x1="50" y1="90" x2="230" y2="90"/>
-    <line x1="50" y1="120" x2="230" y2="120"/>
-    <line x1="50" y1="150" x2="230" y2="150"/>
-    <line x1="80" y1="60" x2="80" y2="180"/>
-    <line x1="110" y1="60" x2="110" y2="180"/>
-    <line x1="140" y1="60" x2="140" y2="180"/>
-    <line x1="170" y1="60" x2="170" y2="180"/>
-    <line x1="200" y1="60" x2="200" y2="180"/>
+    <!-- Título -->
+    <text x="450" y="28"
+          style="font-family:Arial;font-size:18px;font-weight:bold;fill:#58a6ff;text-anchor:middle">
+      SCADA — Sistema Fotovoltaico
+    </text>
+
+    <!-- Línea separadora superior -->
+    <line x1="20" y1="38" x2="880" y2="38" style="stroke:#1f3a5f;stroke-width:1"/>
+
+    <!-- ================================================================
+         PANEL SOLAR — columna izquierda
+    ================================================================ -->
+
+    <!-- Marco panel -->
+    <rect x="40" y="55" width="200" height="130"
+          style="fill:url(#panelGrad);stroke:#00aaff;stroke-width:2"/>
+
+    <!-- Celdas solares -->
+    <g style="stroke:#1a6699;stroke-width:0.8;opacity:0.8">
+      <line x1="40"  y1="88"  x2="240" y2="88"/>
+      <line x1="40"  y1="121" x2="240" y2="121"/>
+      <line x1="40"  y1="154" x2="240" y2="154"/>
+      <line x1="80"  y1="55"  x2="80"  y2="185"/>
+      <line x1="120" y1="55"  x2="120" y2="185"/>
+      <line x1="160" y1="55"  x2="160" y2="185"/>
+      <line x1="200" y1="55"  x2="200" y2="185"/>
+    </g>
+
+    <!-- Brillo panel -->
+    <rect x="40" y="55" width="200" height="130"
+          style="fill:#00ccff;fill-opacity:0.04"/>
+
+    <!-- Título panel -->
+    <text x="140" y="50"
+          style="font-family:Arial;font-size:13px;font-weight:bold;fill:#00aaff;text-anchor:middle">
+      Panel Solar
+    </text>
+
+    <!-- Rayos de sol decorativos -->
+    <g style="stroke:#f0c040;stroke-width:1.5;stroke-linecap:round">
+      <line x1="255" y1="65" x2="265" y2="58"/>
+      <line x1="262" y1="78" x2="274" y2="76"/>
+      <line x1="255" y1="90" x2="266" y2="95"/>
+    </g>
+
+    <!-- VALORES PANEL — texto con tag SCADAvis -->
+    <!-- V panel -->
+    <text x="50" y="205"
+          style="font-family:Arial;font-size:11px;fill:#aaaaaa">V:</text>
+    <text x="70" y="205"
+          id="PV_V"
+          inkscape:label="{&quot;attr&quot;:&quot;text&quot;,&quot;tag&quot;:&quot;PV_V&quot;,&quot;format&quot;:&quot;%.2f V&quot;}"
+          style="font-family:Arial;font-size:13px;font-weight:bold;fill:#00ffcc">0.00 V</text>
+
+    <!-- I panel -->
+    <text x="50" y="222"
+          style="font-family:Arial;font-size:11px;fill:#aaaaaa">I:</text>
+    <text x="70" y="222"
+          id="PV_I"
+          inkscape:label="{&quot;attr&quot;:&quot;text&quot;,&quot;tag&quot;:&quot;PV_I&quot;,&quot;format&quot;:&quot;%.2f A&quot;}"
+          style="font-family:Arial;font-size:13px;font-weight:bold;fill:#00ffcc">0.00 A</text>
+
+    <!-- T panel -->
+    <text x="50" y="239"
+          style="font-family:Arial;font-size:11px;fill:#aaaaaa">T:</text>
+    <text x="70" y="239"
+          id="PV_T"
+          inkscape:label="{&quot;attr&quot;:&quot;text&quot;,&quot;tag&quot;:&quot;PV_T&quot;,&quot;format&quot;:&quot;%.1f °C&quot;,&quot;coloralarm&quot;:&quot;#ff4444&quot;}"
+          style="font-family:Arial;font-size:13px;font-weight:bold;fill:#f0c040">25.0 °C</text>
+
+    <!-- P panel -->
+    <text x="50" y="256"
+          style="font-family:Arial;font-size:11px;fill:#aaaaaa">P:</text>
+    <text x="70" y="256"
+          id="PV_P"
+          inkscape:label="{&quot;attr&quot;:&quot;text&quot;,&quot;tag&quot;:&quot;PV_P&quot;,&quot;format&quot;:&quot;%.1f W&quot;}"
+          style="font-family:Arial;font-size:13px;font-weight:bold;fill:#00ffcc">0.0 W</text>
+
+    <!-- Color del panel según estado (activo/inactivo) -->
+    <rect x="40" y="55" width="200" height="130" id="PV_STATE_COLOR"
+          inkscape:label="{&quot;attr&quot;:&quot;color&quot;,&quot;list&quot;:[{&quot;data&quot;:&quot;false&quot;,&quot;param&quot;:&quot;#0d2040|#003366&quot;,&quot;tag&quot;:&quot;PV_STATE&quot;},{&quot;data&quot;:&quot;true&quot;,&quot;param&quot;:&quot;#1e3a5f|#00aaff&quot;,&quot;tag&quot;:&quot;PV_STATE&quot;}]}"
+          style="fill:transparent;stroke:transparent"/>
+
+    <!-- ================================================================
+         BATERÍA — columna central
+    ================================================================ -->
+
+    <!-- Título batería -->
+    <text x="450" y="50"
+          style="font-family:Arial;font-size:13px;font-weight:bold;fill:#aaaaaa;text-anchor:middle">
+      Batería
+    </text>
+
+    <!-- Cuerpo batería -->
+    <rect x="360" y="70" width="140" height="70"
+          id="BAT_BODY"
+          inkscape:label="{&quot;attr&quot;:&quot;color&quot;,&quot;list&quot;:[{&quot;data&quot;:&quot;false&quot;,&quot;param&quot;:&quot;#1a1a1a|#888888&quot;,&quot;tag&quot;:&quot;BAT_STATE&quot;},{&quot;data&quot;:&quot;true&quot;,&quot;param&quot;:&quot;#1a2a1a|#00cc66&quot;,&quot;tag&quot;:&quot;BAT_STATE&quot;}]}"
+          style="fill:#1a1a1a;stroke:#888888;stroke-width:2"/>
+
+    <!-- Terminal positivo -->
+    <rect x="500" y="88" width="12" height="34" rx="2"
+          style="fill:#888888"/>
+    <text x="504" y="95"
+          style="font-family:Arial;font-size:8px;fill:#ffffff">+</text>
+
+    <!-- Relleno nivel SOC — barra horizontal dentro de la batería -->
+    <rect x="362" y="72" width="136" height="66"
+          id="BAT_SOC_BAR"
+          inkscape:label="{&quot;attr&quot;:&quot;bar&quot;,&quot;tag&quot;:&quot;BAT_SOC&quot;,&quot;min&quot;:0,&quot;max&quot;:100,&quot;dir&quot;:&quot;h&quot;}"
+          style="fill:#00cc66;fill-opacity:0.35"/>
+
+    <!-- Texto SOC dentro de batería -->
+    <text x="430" y="109"
+          id="BAT_SOC"
+          inkscape:label="{&quot;attr&quot;:&quot;text&quot;,&quot;tag&quot;:&quot;BAT_SOC&quot;,&quot;format&quot;:&quot;%.0f%%&quot;}"
+          style="font-family:Arial;font-size:16px;font-weight:bold;fill:#ffffff;text-anchor:middle">0%</text>
+
+    <!-- Signo - izquierda -->
+    <text x="368" y="109"
+          style="font-family:Arial;font-size:20px;font-weight:bold;fill:#aaaaaa">−</text>
+
+    <!-- Indicador alarma temperatura batería — círculo rojo parpadeante -->
+    <circle cx="510" cy="72" r="7"
+            id="BAT_T_ALARM"
+            inkscape:label="{&quot;attr&quot;:&quot;color&quot;,&quot;list&quot;:[{&quot;data&quot;:&quot;false&quot;,&quot;param&quot;:&quot;#333333|#555555&quot;,&quot;tag&quot;:&quot;BAT_T_ALARM&quot;},{&quot;data&quot;:&quot;true&quot;,&quot;param&quot;:&quot;#ff0000|#ff0000&quot;,&quot;tag&quot;:&quot;BAT_T_ALARM&quot;}]}"
+            style="fill:#333333;stroke:#555555;stroke-width:1.5"/>
+    <text x="510" y="76"
+          style="font-family:Arial;font-size:7px;fill:#ffffff;text-anchor:middle">T!</text>
+
+    <!-- VALORES BATERÍA -->
+    <text x="365" y="165"
+          style="font-family:Arial;font-size:11px;fill:#aaaaaa">V:</text>
+    <text x="385" y="165"
+          id="BAT_V"
+          inkscape:label="{&quot;attr&quot;:&quot;text&quot;,&quot;tag&quot;:&quot;BAT_V&quot;,&quot;format&quot;:&quot;%.2f V&quot;}"
+          style="font-family:Arial;font-size:13px;font-weight:bold;fill:#00ffcc">0.00 V</text>
+
+    <text x="365" y="182"
+          style="font-family:Arial;font-size:11px;fill:#aaaaaa">I:</text>
+    <text x="385" y="182"
+          id="BAT_I"
+          inkscape:label="{&quot;attr&quot;:&quot;text&quot;,&quot;tag&quot;:&quot;BAT_I&quot;,&quot;format&quot;:&quot;%.2f A&quot;}"
+          style="font-family:Arial;font-size:13px;font-weight:bold;fill:#00ffcc">0.00 A</text>
+
+    <text x="365" y="199"
+          style="font-family:Arial;font-size:11px;fill:#aaaaaa">P:</text>
+    <text x="385" y="199"
+          id="BAT_P"
+          inkscape:label="{&quot;attr&quot;:&quot;text&quot;,&quot;tag&quot;:&quot;BAT_P&quot;,&quot;format&quot;:&quot;%.1f W&quot;}"
+          style="font-family:Arial;font-size:13px;font-weight:bold;fill:#00ffcc">0.0 W</text>
+
+    <text x="365" y="216"
+          style="font-family:Arial;font-size:11px;fill:#aaaaaa">T:</text>
+    <text x="385" y="216"
+          id="BAT_T"
+          inkscape:label="{&quot;attr&quot;:&quot;text&quot;,&quot;tag&quot;:&quot;BAT_T&quot;,&quot;format&quot;:&quot;%.1f °C&quot;}"
+          style="font-family:Arial;font-size:13px;font-weight:bold;fill:#f0c040">25.0 °C</text>
+
+    <!-- ================================================================
+         CARGA (BOMBILLA) — columna derecha
+    ================================================================ -->
+
+    <!-- Título carga -->
+    <text x="760" y="50"
+          style="font-family:Arial;font-size:13px;font-weight:bold;fill:#ffff44;text-anchor:middle">
+      Carga
+    </text>
+
+    <!-- Bombilla — cuerpo -->
+    <circle cx="760" cy="110" r="45"
+            id="BULB_BODY"
+            inkscape:label="{&quot;attr&quot;:&quot;color&quot;,&quot;list&quot;:[{&quot;data&quot;:&quot;false&quot;,&quot;param&quot;:&quot;#1a1a1a|#555500&quot;,&quot;tag&quot;:&quot;LOAD_STATE&quot;},{&quot;data&quot;:&quot;true&quot;,&quot;param&quot;:&quot;#3a3a00|#ffff00&quot;,&quot;tag&quot;:&quot;LOAD_STATE&quot;}]}"
+            style="fill:#1a1a1a;stroke:#555500;stroke-width:2"/>
+
+    <!-- Brillo bombilla activa -->
+    <circle cx="760" cy="110" r="45"
+            id="BULB_GLOW"
+            inkscape:label="{&quot;attr&quot;:&quot;color&quot;,&quot;list&quot;:[{&quot;data&quot;:&quot;false&quot;,&quot;param&quot;:&quot;transparent|transparent&quot;,&quot;tag&quot;:&quot;LOAD_STATE&quot;},{&quot;data&quot;:&quot;true&quot;,&quot;param&quot;:&quot;#ffff00|transparent&quot;,&quot;tag&quot;:&quot;LOAD_STATE&quot;}]}"
+            style="fill:transparent;fill-opacity:0.08;stroke:transparent"/>
+
+    <!-- Filamento -->
+    <polyline points="745,130 745,118 753,112 760,118 767,112 775,118 775,130"
+              style="fill:none;stroke:#ffff44;stroke-width:1.5;stroke-linejoin:round"/>
+
+    <!-- Base bombilla -->
+    <rect x="742" y="155" width="36" height="8" rx="2" style="fill:#888"/>
+    <rect x="744" y="163" width="32" height="6" rx="2" style="fill:#666"/>
+    <rect x="747" y="169" width="26" height="5" rx="2" style="fill:#444"/>
+
+    <!-- VALORES CARGA -->
+    <text x="710" y="200"
+          style="font-family:Arial;font-size:11px;fill:#aaaaaa">V:</text>
+    <text x="730" y="200"
+          id="LOAD_V"
+          inkscape:label="{&quot;attr&quot;:&quot;text&quot;,&quot;tag&quot;:&quot;LOAD_V&quot;,&quot;format&quot;:&quot;%.2f V&quot;}"
+          style="font-family:Arial;font-size:13px;font-weight:bold;fill:#ffff44">0.00 V</text>
+
+    <text x="710" y="217"
+          style="font-family:Arial;font-size:11px;fill:#aaaaaa">I:</text>
+    <text x="730" y="217"
+          id="LOAD_I"
+          inkscape:label="{&quot;attr&quot;:&quot;text&quot;,&quot;tag&quot;:&quot;LOAD_I&quot;,&quot;format&quot;:&quot;%.2f A&quot;}"
+          style="font-family:Arial;font-size:13px;font-weight:bold;fill:#ffff44">0.00 A</text>
+
+    <text x="710" y="234"
+          style="font-family:Arial;font-size:11px;fill:#aaaaaa">P:</text>
+    <text x="730" y="234"
+          id="LOAD_P"
+          inkscape:label="{&quot;attr&quot;:&quot;text&quot;,&quot;tag&quot;:&quot;LOAD_P&quot;,&quot;format&quot;:&quot;%.1f W&quot;}"
+          style="font-family:Arial;font-size:13px;font-weight:bold;fill:#ffff44">0.0 W</text>
+
+    <!-- ================================================================
+         CONEXIONES Y FLUJOS
+    ================================================================ -->
+
+    <!-- Cable Panel → Batería -->
+    <line x1="240" y1="120" x2="360" y2="105"
+          style="stroke:#444;stroke-width:3"/>
+
+    <!-- Cable Batería → Carga -->
+    <line x1="500" y1="105" x2="715" y2="110"
+          style="stroke:#444;stroke-width:3"/>
+
+    <!-- FLECHA FLOW Panel → Carga (por encima del cable) -->
+    <line x1="265" y1="116" x2="310" y2="113"
+          id="FLOW_PV_LOAD"
+          inkscape:label="{&quot;attr&quot;:&quot;color&quot;,&quot;list&quot;:[{&quot;data&quot;:&quot;false&quot;,&quot;param&quot;:&quot;transparent|transparent&quot;,&quot;tag&quot;:&quot;FLOW_PV_LOAD&quot;},{&quot;data&quot;:&quot;true&quot;,&quot;param&quot;:&quot;#00ff88|#00ff88&quot;,&quot;tag&quot;:&quot;FLOW_PV_LOAD&quot;}]}"
+          style="stroke:#00ff88;stroke-width:4"
+          marker-end="url(#arrowGreen)"/>
+
+    <!-- FLECHA FLOW Panel → Batería -->
+    <line x1="285" y1="114" x2="340" y2="110"
+          id="FLOW_PV_BAT"
+          inkscape:label="{&quot;attr&quot;:&quot;color&quot;,&quot;list&quot;:[{&quot;data&quot;:&quot;false&quot;,&quot;param&quot;:&quot;transparent|transparent&quot;,&quot;tag&quot;:&quot;FLOW_PV_BAT&quot;},{&quot;data&quot;:&quot;true&quot;,&quot;param&quot;:&quot;#ff8800|#ff8800&quot;,&quot;tag&quot;:&quot;FLOW_PV_BAT&quot;}]}"
+          style="stroke:#ff8800;stroke-width:4"
+          marker-end="url(#arrowOrange)"/>
+
+    <!-- FLECHA FLOW Batería → Carga -->
+    <line x1="520" y1="108" x2="600" y2="108"
+          id="FLOW_BAT_LOAD"
+          inkscape:label="{&quot;attr&quot;:&quot;color&quot;,&quot;list&quot;:[{&quot;data&quot;:&quot;false&quot;,&quot;param&quot;:&quot;transparent|transparent&quot;,&quot;tag&quot;:&quot;FLOW_BAT_LOAD&quot;},{&quot;data&quot;:&quot;true&quot;,&quot;param&quot;:&quot;#00aaff|#00aaff&quot;,&quot;tag&quot;:&quot;FLOW_BAT_LOAD&quot;}]}"
+          style="stroke:#00aaff;stroke-width:4"
+          marker-end="url(#arrowBlue)"/>
+
+    <!-- ================================================================
+         PANEL RESUMEN INFERIOR
+    ================================================================ -->
+    <rect x="20" y="275" width="860" height="110"
+          style="fill:#0d1117;stroke:#1f3a5f;stroke-width:1.5"/>
+
+    <text x="450" y="298"
+          style="font-family:Arial;font-size:13px;font-weight:bold;fill:#58a6ff;text-anchor:middle">
+      Resumen de Potencia
+    </text>
+
+    <!-- P Panel -->
+    <text x="80" y="325"
+          style="font-family:Arial;font-size:11px;fill:#aaaaaa;text-anchor:middle">P Panel</text>
+    <text x="80" y="348"
+          id="TOTAL_PV"
+          inkscape:label="{&quot;attr&quot;:&quot;text&quot;,&quot;tag&quot;:&quot;TOTAL_PV&quot;,&quot;format&quot;:&quot;%.1f W&quot;}"
+          style="font-family:Arial;font-size:20px;font-weight:bold;fill:#00aaff;text-anchor:middle">0.0 W</text>
+
+    <!-- Separador -->
+    <line x1="160" y1="308" x2="160" y2="368" style="stroke:#1f3a5f;stroke-width:1"/>
+
+    <!-- P Batería -->
+    <text x="290" y="325"
+          style="font-family:Arial;font-size:11px;fill:#aaaaaa;text-anchor:middle">P Batería</text>
+    <text x="290" y="348"
+          id="TOTAL_BAT"
+          inkscape:label="{&quot;attr&quot;:&quot;text&quot;,&quot;tag&quot;:&quot;TOTAL_BAT&quot;,&quot;format&quot;:&quot;%.1f W&quot;}"
+          style="font-family:Arial;font-size:20px;font-weight:bold;fill:#00cc66;text-anchor:middle">0.0 W</text>
+
+    <!-- Separador -->
+    <line x1="430" y1="308" x2="430" y2="368" style="stroke:#1f3a5f;stroke-width:1"/>
+
+    <!-- P Carga -->
+    <text x="550" y="325"
+          style="font-family:Arial;font-size:11px;fill:#aaaaaa;text-anchor:middle">P Carga</text>
+    <text x="550" y="348"
+          id="TOTAL_LOAD"
+          inkscape:label="{&quot;attr&quot;:&quot;text&quot;,&quot;tag&quot;:&quot;TOTAL_LOAD&quot;,&quot;format&quot;:&quot;%.1f W&quot;}"
+          style="font-family:Arial;font-size:20px;font-weight:bold;fill:#ffff44;text-anchor:middle">0.0 W</text>
+
+    <!-- Separador -->
+    <line x1="680" y1="308" x2="680" y2="368" style="stroke:#1f3a5f;stroke-width:1"/>
+
+    <!-- Modo del sistema -->
+    <text x="780" y="325"
+          style="font-family:Arial;font-size:11px;fill:#aaaaaa;text-anchor:middle">Modo</text>
+    <text x="780" y="348"
+          id="SYSTEM_MODE"
+          inkscape:label="{&quot;attr&quot;:&quot;text&quot;,&quot;tag&quot;:&quot;SYSTEM_MODE&quot;}"
+          style="font-family:Arial;font-size:18px;font-weight:bold;fill:#ffffff;text-anchor:middle">IDLE</text>
+
+    <!-- Color fondo modo según estado -->
+    <rect x="700" y="308" width="170" height="62"
+          id="MODE_COLOR"
+          inkscape:label="{&quot;attr&quot;:&quot;color&quot;,&quot;list&quot;:[{&quot;data&quot;:&quot;IDLE&quot;,&quot;param&quot;:&quot;#1a1a2e|#1f3a5f&quot;,&quot;tag&quot;:&quot;SYSTEM_MODE&quot;},{&quot;data&quot;:&quot;CHARGE&quot;,&quot;param&quot;:&quot;#001a00|#00aa44&quot;,&quot;tag&quot;:&quot;SYSTEM_MODE&quot;},{&quot;data&quot;:&quot;DISCHARGE&quot;,&quot;param&quot;:&quot;#1a0800|#ff8800&quot;,&quot;tag&quot;:&quot;SYSTEM_MODE&quot;}]}"
+          style="fill:#1a1a2e;stroke:#1f3a5f;stroke-width:1"/>
+
+    <!-- Texto modo encima del rectángulo de color -->
+    <text x="780" y="325"
+          style="font-family:Arial;font-size:11px;fill:#aaaaaa;text-anchor:middle">Modo</text>
+    <text x="780" y="353"
+          id="SYSTEM_MODE2"
+          inkscape:label="{&quot;attr&quot;:&quot;text&quot;,&quot;tag&quot;:&quot;SYSTEM_MODE&quot;}"
+          style="font-family:Arial;font-size:18px;font-weight:bold;fill:#ffffff;text-anchor:middle">IDLE</text>
+
+    <!-- ================================================================
+         LEYENDA FLUJOS
+    ================================================================ -->
+    <text x="30" y="410"
+          style="font-family:Arial;font-size:10px;fill:#555555">Flujos: </text>
+    <line x1="75" y1="406" x2="100" y2="406" style="stroke:#00ff88;stroke-width:2" marker-end="url(#arrowGreen)"/>
+    <text x="105" y="410" style="font-family:Arial;font-size:10px;fill:#00ff88">Panel→Carga</text>
+    <line x1="185" y1="406" x2="210" y2="406" style="stroke:#ff8800;stroke-width:2" marker-end="url(#arrowOrange)"/>
+    <text x="215" y="410" style="font-family:Arial;font-size:10px;fill:#ff8800">Panel→Batería</text>
+    <line x1="305" y1="406" x2="330" y2="406" style="stroke:#00aaff;stroke-width:2" marker-end="url(#arrowBlue)"/>
+    <text x="335" y="410" style="font-family:Arial;font-size:10px;fill:#00aaff">Batería→Carga</text>
+
+    <!-- Timestamp -->
+    <text x="880" y="490"
+          style="font-family:Arial;font-size:9px;fill:#333333;text-anchor:end">
+      Sistema Fotovoltaico SCADA v1.0
+    </text>
+
   </g>
-
-  <!-- Valores panel -->
-  <text class="label" x="60" y="200">V:</text>
-  <text class="value" id="PV_V" x="90" y="200">0</text>
-
-  <text class="label" x="60" y="220">I:</text>
-  <text class="value" id="PV_I" x="90" y="220">0</text>
-
-  <text class="label" x="60" y="240">T:</text>
-  <text class="value" id="PV_T" x="90" y="240">0</text>
-
-  <text class="label" x="60" y="260">P:</text>
-  <text class="value" id="PV_P" x="90" y="260">0</text>
-
-  <!-- ================= BATERÍA ================= -->
-  <text class="title" x="380" y="40">Batería</text>
-
-  <!-- Cuerpo -->
-  <rect x="350" y="80" width="120" height="60" fill="#333" stroke="#aaa" stroke-width="2"/>
-
-  <!-- Terminal -->
-  <rect x="470" y="95" width="10" height="30" fill="#aaa"/>
-
-  <!-- Signos -->
-  <text x="360" y="115">-</text>
-  <text x="455" y="115">+</text>
-
-  <!-- Indicador alarma temperatura -->
-  <circle id="BAT_T_ALARM" cx="480" cy="80" r="6" fill="red"/>
-
-  <!-- Valores batería -->
-  <text class="label" x="350" y="170">V:</text>
-  <text class="value" id="BAT_V" x="380" y="170">0</text>
-
-  <text class="label" x="350" y="190">I:</text>
-  <text class="value" id="BAT_I" x="380" y="190">0</text>
-
-  <text class="label" x="350" y="210">P:</text>
-  <text class="value" id="BAT_P" x="380" y="210">0</text>
-
-  <text class="label" x="350" y="230">T:</text>
-  <text class="value" id="BAT_T" x="380" y="230">0</text>
-
-  <!-- ================= CARGA ================= -->
-  <text class="title" x="700" y="40">Carga</text>
-
-  <!-- Bombilla -->
-  <circle cx="730" cy="110" r="30" fill="#222" stroke="#ffff00" stroke-width="2"/>
-  <line x1="730" y1="140" x2="730" y2="170" stroke="#ffff00" stroke-width="3"/>
-  <line x1="715" y1="170" x2="745" y2="170" stroke="#ffff00" stroke-width="3"/>
-  <path d="M715 110 Q730 90 745 110" stroke="#ffff00" fill="none"/>
-
-  <!-- Valores carga -->
-  <text class="label" x="700" y="200">V:</text>
-  <text class="value" id="LOAD_V" x="730" y="200">0</text>
-
-  <text class="label" x="700" y="220">I:</text>
-  <text class="value" id="LOAD_I" x="730" y="220">0</text>
-
-  <text class="label" x="700" y="240">P:</text>
-  <text class="value" id="LOAD_P" x="730" y="240">0</text>
-
-  <!-- ================= CONEXIONES ================= -->
-  <line class="line" x1="230" y1="120" x2="350" y2="110"/>
-  <line class="line" x1="470" y1="110" x2="700" y2="110"/>
-
-  <!-- ================= FLECHAS ================= -->
-  <polygon id="FLOW_PV_LOAD" points="290,105 310,110 290,115" fill="#00ff00"/>
-  <polygon id="FLOW_PV_BAT" points="320,105 340,110 320,115" fill="#00ff00"/>
-  <polygon id="FLOW_BAT_LOAD" points="580,105 600,110 580,115" fill="#00ff00"/>
-
-  <!-- ================= RESUMEN ================= -->
-  <rect x="50" y="300" width="800" height="100" fill="#111" stroke="#444"/>
-
-  <text class="title" x="60" y="290">Resumen del Sistema</text>
-
-  <text class="label" x="70" y="330">P Panel:</text>
-  <text class="value" id="TOTAL_PV" x="150" y="330">0</text>
-
-  <text class="label" x="70" y="350">P Carga:</text>
-  <text class="value" id="TOTAL_LOAD" x="150" y="350">0</text>
-
-  <text class="label" x="70" y="370">P Batería:</text>
-  <text class="value" id="TOTAL_BAT" x="150" y="370">0</text>
-
-  <text class="label" x="500" y="350">Modo:</text>
-  <text class="value" id="SYSTEM_MODE" x="560" y="350">IDLE</text>
-
 </svg>
