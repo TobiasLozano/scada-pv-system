@@ -10,6 +10,7 @@
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    width="900"
    height="540"
+   viewBox="0 0 900 540"
    id="svg2"
    version="1.1"
    inkscape:version="0.92.4"
@@ -107,8 +108,8 @@
             style="fill:#f5f5f5;stroke:#9E9E9E;stroke-width:2.5"/>
     <circle cx="783" cy="108" r="50"
             id="BULB_GLOW"
-            inkscape:label="{&quot;attr&quot;:&quot;color&quot;,&quot;list&quot;:[{&quot;data&quot;:&quot;false&quot;,&quot;param&quot;:&quot;transparent|transparent&quot;,&quot;tag&quot;:&quot;LOAD_STATE&quot;},{&quot;data&quot;:&quot;true&quot;,&quot;param&quot;:&quot;#FFF59D|transparent&quot;,&quot;tag&quot;:&quot;LOAD_STATE&quot;}]}"
-            style="fill:transparent;fill-opacity:0.45;stroke:transparent"/>
+            inkscape:label="{&quot;attr&quot;:&quot;color&quot;,&quot;list&quot;:[{&quot;data&quot;:&quot;false&quot;,&quot;param&quot;:&quot;none|none&quot;,&quot;tag&quot;:&quot;LOAD_STATE&quot;},{&quot;data&quot;:&quot;true&quot;,&quot;param&quot;:&quot;#FFF59D|none&quot;,&quot;tag&quot;:&quot;LOAD_STATE&quot;}]}"
+            style="fill:none;fill-opacity:0.45;stroke:none"/>
     <polyline points="768,130 768,116 776,110 783,116 790,110 798,116 798,130"
               style="fill:none;stroke:#795548;stroke-width:2;stroke-linejoin:round"/>
     <rect x="764" y="155" width="38" height="9" rx="2" style="fill:#9E9E9E"/>
@@ -182,23 +183,23 @@
           style="font-family:Arial;font-size:12px;font-weight:bold;fill:#E65100">0.0 °C</text>
 
     <!-- ============================================================
-         FLUJOS — cable rojo activo / transparente inactivo
+         FLUJOS — cable rojo activo / nonee inactivo
     ============================================================ -->
     <!-- Panel → Carga: resalta bus+ horizontal en rojo -->
     <line x1="220" y1="114" x2="730" y2="114"
           id="FLOW_PV_LOAD"
-          inkscape:label="{&quot;attr&quot;:&quot;color&quot;,&quot;list&quot;:[{&quot;data&quot;:&quot;false&quot;,&quot;param&quot;:&quot;transparent|transparent&quot;,&quot;tag&quot;:&quot;FLOW_PV_LOAD&quot;},{&quot;data&quot;:&quot;true&quot;,&quot;param&quot;:&quot;#C62828|#C62828&quot;,&quot;tag&quot;:&quot;FLOW_PV_LOAD&quot;}]}"
-          style="stroke:transparent;stroke-width:5"/>
+          inkscape:label="{&quot;attr&quot;:&quot;color&quot;,&quot;list&quot;:[{&quot;data&quot;:&quot;false&quot;,&quot;param&quot;:&quot;none|none&quot;,&quot;tag&quot;:&quot;FLOW_PV_LOAD&quot;},{&quot;data&quot;:&quot;true&quot;,&quot;param&quot;:&quot;#C62828|#C62828&quot;,&quot;tag&quot;:&quot;FLOW_PV_LOAD&quot;}]}"
+          style="stroke:none;stroke-width:5"/>
     <!-- Panel → Batería: cable rojo bajando -->
     <line x1="452" y1="121" x2="452" y2="295"
           id="FLOW_PV_BAT"
-          inkscape:label="{&quot;attr&quot;:&quot;color&quot;,&quot;list&quot;:[{&quot;data&quot;:&quot;false&quot;,&quot;param&quot;:&quot;transparent|transparent&quot;,&quot;tag&quot;:&quot;FLOW_PV_BAT&quot;},{&quot;data&quot;:&quot;true&quot;,&quot;param&quot;:&quot;#C62828|#C62828&quot;,&quot;tag&quot;:&quot;FLOW_PV_BAT&quot;}]}"
-          style="stroke:transparent;stroke-width:5"/>
+          inkscape:label="{&quot;attr&quot;:&quot;color&quot;,&quot;list&quot;:[{&quot;data&quot;:&quot;false&quot;,&quot;param&quot;:&quot;none|none&quot;,&quot;tag&quot;:&quot;FLOW_PV_BAT&quot;},{&quot;data&quot;:&quot;true&quot;,&quot;param&quot;:&quot;#C62828|#C62828&quot;,&quot;tag&quot;:&quot;FLOW_PV_BAT&quot;}]}"
+          style="stroke:none;stroke-width:5"/>
     <!-- Batería → Carga: cable negro subiendo -->
     <line x1="448" y1="295" x2="448" y2="121"
           id="FLOW_BAT_LOAD"
-          inkscape:label="{&quot;attr&quot;:&quot;color&quot;,&quot;list&quot;:[{&quot;data&quot;:&quot;false&quot;,&quot;param&quot;:&quot;transparent|transparent&quot;,&quot;tag&quot;:&quot;FLOW_BAT_LOAD&quot;},{&quot;data&quot;:&quot;true&quot;,&quot;param&quot;:&quot;#212121|#212121&quot;,&quot;tag&quot;:&quot;FLOW_BAT_LOAD&quot;}]}"
-          style="stroke:transparent;stroke-width:5"/>
+          inkscape:label="{&quot;attr&quot;:&quot;color&quot;,&quot;list&quot;:[{&quot;data&quot;:&quot;false&quot;,&quot;param&quot;:&quot;none|none&quot;,&quot;tag&quot;:&quot;FLOW_BAT_LOAD&quot;},{&quot;data&quot;:&quot;true&quot;,&quot;param&quot;:&quot;#212121|#212121&quot;,&quot;tag&quot;:&quot;FLOW_BAT_LOAD&quot;}]}"
+          style="stroke:none;stroke-width:5"/>
 
     <!-- ============================================================
          RESUMEN POTENCIAS
@@ -221,8 +222,8 @@
           style="font-family:Arial;font-size:19px;font-weight:bold;fill:#E65100;text-anchor:middle">0.0 W</text>
     <rect x="675" y="466" width="225" height="74"
           id="MODE_COLOR"
-          inkscape:label="{&quot;attr&quot;:&quot;color&quot;,&quot;list&quot;:[{&quot;data&quot;:&quot;IDLE&quot;,&quot;param&quot;:&quot;transparent|transparent&quot;,&quot;tag&quot;:&quot;SYSTEM_MODE&quot;},{&quot;data&quot;:&quot;CHARGE&quot;,&quot;param&quot;:&quot;#1B5E20|#2E7D32&quot;,&quot;tag&quot;:&quot;SYSTEM_MODE&quot;},{&quot;data&quot;:&quot;DISCHARGE&quot;,&quot;param&quot;:&quot;#BF360C|#E64A19&quot;,&quot;tag&quot;:&quot;SYSTEM_MODE&quot;}]}"
-          style="fill:transparent;stroke:none"/>
+          inkscape:label="{&quot;attr&quot;:&quot;color&quot;,&quot;list&quot;:[{&quot;data&quot;:&quot;IDLE&quot;,&quot;param&quot;:&quot;none|none&quot;,&quot;tag&quot;:&quot;SYSTEM_MODE&quot;},{&quot;data&quot;:&quot;CHARGE&quot;,&quot;param&quot;:&quot;#1B5E20|#2E7D32&quot;,&quot;tag&quot;:&quot;SYSTEM_MODE&quot;},{&quot;data&quot;:&quot;DISCHARGE&quot;,&quot;param&quot;:&quot;#BF360C|#E64A19&quot;,&quot;tag&quot;:&quot;SYSTEM_MODE&quot;}]}"
+          style="fill:none;stroke:none"/>
     <text x="787" y="484" style="font-family:Arial;font-size:9px;fill:#757575;text-anchor:middle;letter-spacing:1">MODO</text>
     <text x="787" y="508" id="SYSTEM_MODE"
           inkscape:label="{&quot;attr&quot;:&quot;text&quot;,&quot;tag&quot;:&quot;SYSTEM_MODE&quot;}"
