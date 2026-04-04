@@ -39,15 +39,9 @@
     <!-- Titulo -->
     <text x="450" y="26" style="font-family:Arial;font-size:16px;font-weight:bold;fill:#1565C0;text-anchor:middle">SCADA — Sistema Fotovoltaico</text>
 
-    <!-- ============================================================
-         BUS DC — barra horizontal central (fila 1)
-    ============================================================ -->
-    <text x="450" y="105" style="font-family:Arial;font-size:10px;font-weight:bold;fill:#424242;text-anchor:middle">BUS DC +</text>
-    <rect x="220" y="108" width="510" height="13" rx="2" style="fill:#424242;stroke:#212121;stroke-width:1"/>
-    <circle cx="450" cy="114" r="6" style="fill:#212121"/>
-    <rect x="220" y="158" width="510" height="6" rx="1" style="fill:#78909C;stroke:#546E7A;stroke-width:0.5"/>
-    <text x="450" y="175" style="font-family:Arial;font-size:9px;fill:#78909C;text-anchor:middle">GND</text>
-    <circle cx="430" cy="161" r="4" style="fill:#546E7A"/>
+    <!-- BUS DC -->
+    <line x1="220" y1="114" x2="730" y2="114" style="stroke:#C62828;stroke-width:5"/>
+    <line x1="220" y1="158" x2="730" y2="158" style="stroke:#212121;stroke-width:5"/>
 
     <!-- ============================================================
          PANEL SOLAR — izquierda
@@ -66,7 +60,6 @@
       <line x1="182" y1="55"  x2="182" y2="170"/>
     </g>
     <rect x="30" y="55" width="190" height="115" style="fill:url(#panelGradActive);fill-opacity:0.25"/>
-    <text x="125" y="49" style="font-family:Arial;font-size:12px;font-weight:bold;fill:#1565C0;text-anchor:middle">Panel Solar</text>
     <circle cx="207" cy="43" r="9" style="fill:#FDD835;stroke:#F9A825;stroke-width:1.5"/>
     <g style="stroke:#F9A825;stroke-width:1.5;stroke-linecap:round">
       <line x1="207" y1="29" x2="207" y2="26"/>
@@ -80,28 +73,26 @@
     </g>
     <!-- Valores panel -->
     <rect x="30" y="182" width="190" height="80" style="fill:#ffffff;stroke:#CFD8DC;stroke-width:1.5"/>
-    <text x="125" y="197" style="font-family:Arial;font-size:9px;font-weight:bold;fill:#78909C;text-anchor:middle;letter-spacing:1">PANEL SOLAR</text>
     <text x="38" y="213" style="font-family:Arial;font-size:10px;fill:#616161">V:</text>
     <text x="54" y="213" id="PV_V"
           inkscape:label="{&quot;attr&quot;:&quot;text&quot;,&quot;tag&quot;:&quot;PV_V&quot;,&quot;format&quot;:&quot;%.2f V&quot;}"
-          style="font-family:Arial;font-size:12px;font-weight:bold;fill:#1565C0">0.00 V</text>
+          style="font-family:Arial;font-size:12px;font-weight:bold;fill:#1565C0"></text>
     <text x="38" y="229" style="font-family:Arial;font-size:10px;fill:#616161">I:</text>
     <text x="54" y="229" id="PV_I"
           inkscape:label="{&quot;attr&quot;:&quot;text&quot;,&quot;tag&quot;:&quot;PV_I&quot;,&quot;format&quot;:&quot;%.2f A&quot;}"
-          style="font-family:Arial;font-size:12px;font-weight:bold;fill:#1565C0">0.00 A</text>
+          style="font-family:Arial;font-size:12px;font-weight:bold;fill:#1565C0"></text>
     <text x="38" y="245" style="font-family:Arial;font-size:10px;fill:#616161">T:</text>
     <text x="54" y="245" id="PV_T"
           inkscape:label="{&quot;attr&quot;:&quot;text&quot;,&quot;tag&quot;:&quot;PV_T&quot;,&quot;format&quot;:&quot;%.1f °C&quot;,&quot;coloralarm&quot;:&quot;#C62828&quot;}"
-          style="font-family:Arial;font-size:12px;font-weight:bold;fill:#E65100">0.0 °C</text>
+          style="font-family:Arial;font-size:12px;font-weight:bold;fill:#E65100"></text>
     <text x="38" y="255" style="font-family:Arial;font-size:10px;fill:#616161">P:</text>
     <text x="54" y="255" id="PV_P"
           inkscape:label="{&quot;attr&quot;:&quot;text&quot;,&quot;tag&quot;:&quot;PV_P&quot;,&quot;format&quot;:&quot;%.1f W&quot;}"
-          style="font-family:Arial;font-size:12px;font-weight:bold;fill:#1565C0">0.0 W</text>
+          style="font-family:Arial;font-size:12px;font-weight:bold;fill:#1565C0"></text>
 
     <!-- ============================================================
          CARGA — derecha
     ============================================================ -->
-    <text x="783" y="49" style="font-family:Arial;font-size:12px;font-weight:bold;fill:#E65100;text-anchor:middle">Carga</text>
     <circle cx="783" cy="108" r="50"
             id="BULB_BODY"
             inkscape:label="{&quot;attr&quot;:&quot;color&quot;,&quot;list&quot;:[{&quot;data&quot;:&quot;false&quot;,&quot;param&quot;:&quot;#f5f5f5|#9E9E9E&quot;,&quot;tag&quot;:&quot;LOAD_STATE&quot;},{&quot;data&quot;:&quot;true&quot;,&quot;param&quot;:&quot;#FFF9C4|#F9A825&quot;,&quot;tag&quot;:&quot;LOAD_STATE&quot;}]}"
@@ -117,30 +108,26 @@
     <rect x="769" y="171" width="28" height="5" rx="2" style="fill:#616161"/>
     <!-- Valores carga -->
     <rect x="690" y="182" width="185" height="70" style="fill:#ffffff;stroke:#CFD8DC;stroke-width:1.5"/>
-    <text x="782" y="197" style="font-family:Arial;font-size:9px;font-weight:bold;fill:#78909C;text-anchor:middle;letter-spacing:1">CARGA</text>
     <text x="698" y="213" style="font-family:Arial;font-size:10px;fill:#616161">V:</text>
     <text x="714" y="213" id="LOAD_V"
           inkscape:label="{&quot;attr&quot;:&quot;text&quot;,&quot;tag&quot;:&quot;LOAD_V&quot;,&quot;format&quot;:&quot;%.2f V&quot;}"
-          style="font-family:Arial;font-size:12px;font-weight:bold;fill:#E65100">0.00 V</text>
+          style="font-family:Arial;font-size:12px;font-weight:bold;fill:#E65100"></text>
     <text x="698" y="229" style="font-family:Arial;font-size:10px;fill:#616161">I:</text>
     <text x="714" y="229" id="LOAD_I"
           inkscape:label="{&quot;attr&quot;:&quot;text&quot;,&quot;tag&quot;:&quot;LOAD_I&quot;,&quot;format&quot;:&quot;%.2f A&quot;}"
-          style="font-family:Arial;font-size:12px;font-weight:bold;fill:#E65100">0.00 A</text>
+          style="font-family:Arial;font-size:12px;font-weight:bold;fill:#E65100"></text>
     <text x="698" y="245" style="font-family:Arial;font-size:10px;fill:#616161">P:</text>
     <text x="714" y="245" id="LOAD_P"
           inkscape:label="{&quot;attr&quot;:&quot;text&quot;,&quot;tag&quot;:&quot;LOAD_P&quot;,&quot;format&quot;:&quot;%.1f W&quot;}"
-          style="font-family:Arial;font-size:12px;font-weight:bold;fill:#E65100">0.0 W</text>
+          style="font-family:Arial;font-size:12px;font-weight:bold;fill:#E65100"></text>
 
-    <!-- ============================================================
-         CONEXION VERTICAL BUS -> BATERIA
-    ============================================================ -->
-    <line x1="450" y1="121" x2="450" y2="295" style="stroke:#424242;stroke-width:3"/>
-    <line x1="430" y1="164" x2="430" y2="295" style="stroke:#78909C;stroke-width:2"/>
+    <!-- BUS -> BATERIA -->
+    <line x1="450" y1="114" x2="450" y2="295" style="stroke:#C62828;stroke-width:5"/>
+    <line x1="430" y1="158" x2="430" y2="295" style="stroke:#212121;stroke-width:5"/>
 
     <!-- ============================================================
          BATERIA — fila 2 centro
     ============================================================ -->
-    <text x="450" y="283" style="font-family:Arial;font-size:11px;font-weight:bold;fill:#2E7D32;text-anchor:middle">Batería  ‖  Bus DC (Paralelo)</text>
     <rect x="330" y="295" width="240" height="95"
           id="BAT_BODY"
           inkscape:label="{&quot;attr&quot;:&quot;color&quot;,&quot;list&quot;:[{&quot;data&quot;:&quot;false&quot;,&quot;param&quot;:&quot;#f5f5f5|#9E9E9E&quot;,&quot;tag&quot;:&quot;BAT_STATE&quot;},{&quot;data&quot;:&quot;true&quot;,&quot;param&quot;:&quot;#E8F5E9|#2E7D32&quot;,&quot;tag&quot;:&quot;BAT_STATE&quot;}]}"
@@ -149,14 +136,6 @@
     <text x="577" y="344" style="font-family:Arial;font-size:11px;font-weight:bold;fill:#C62828;text-anchor:middle">+</text>
     <rect x="316" y="322" width="14" height="36" rx="2" style="fill:#9E9E9E;stroke:#757575;stroke-width:1"/>
     <text x="323" y="344" style="font-family:Arial;font-size:11px;font-weight:bold;fill:#212121;text-anchor:middle">−</text>
-    <rect x="332" y="297" width="236" height="91"
-          id="BAT_SOC_BAR"
-          inkscape:label="{&quot;attr&quot;:&quot;bar&quot;,&quot;tag&quot;:&quot;BAT_SOC&quot;,&quot;min&quot;:0,&quot;max&quot;:100,&quot;dir&quot;:&quot;h&quot;}"
-          style="fill:#4CAF50;fill-opacity:0.28"/>
-    <text x="450" y="348" id="BAT_SOC"
-          inkscape:label="{&quot;attr&quot;:&quot;text&quot;,&quot;tag&quot;:&quot;BAT_SOC&quot;,&quot;format&quot;:&quot;%.0f%%&quot;}"
-          style="font-family:Arial;font-size:24px;font-weight:bold;fill:#2E7D32;text-anchor:middle">0%</text>
-    <text x="450" y="364" style="font-family:Arial;font-size:9px;fill:#78909C;text-anchor:middle">SOC</text>
     <circle cx="571" cy="299" r="9"
             id="BAT_T_ALARM"
             inkscape:label="{&quot;attr&quot;:&quot;color&quot;,&quot;list&quot;:[{&quot;data&quot;:&quot;false&quot;,&quot;param&quot;:&quot;#e0e0e0|#9E9E9E&quot;,&quot;tag&quot;:&quot;BAT_T_ALARM&quot;},{&quot;data&quot;:&quot;true&quot;,&quot;param&quot;:&quot;#C62828|#B71C1C&quot;,&quot;tag&quot;:&quot;BAT_T_ALARM&quot;}]}"
@@ -164,23 +143,22 @@
     <text x="571" y="303" style="font-family:Arial;font-size:7px;font-weight:bold;fill:#424242;text-anchor:middle">T!</text>
     <!-- Valores bateria -->
     <rect x="330" y="398" width="240" height="62" style="fill:#ffffff;stroke:#CFD8DC;stroke-width:1.5"/>
-    <text x="450" y="413" style="font-family:Arial;font-size:9px;font-weight:bold;fill:#78909C;text-anchor:middle;letter-spacing:1">BATERÍA</text>
     <text x="338" y="429" style="font-family:Arial;font-size:10px;fill:#616161">V:</text>
     <text x="352" y="429" id="BAT_V"
           inkscape:label="{&quot;attr&quot;:&quot;text&quot;,&quot;tag&quot;:&quot;BAT_V&quot;,&quot;format&quot;:&quot;%.2f V&quot;}"
-          style="font-family:Arial;font-size:12px;font-weight:bold;fill:#2E7D32">0.00 V</text>
+          style="font-family:Arial;font-size:12px;font-weight:bold;fill:#2E7D32"></text>
     <text x="440" y="429" style="font-family:Arial;font-size:10px;fill:#616161">I:</text>
     <text x="454" y="429" id="BAT_I"
           inkscape:label="{&quot;attr&quot;:&quot;text&quot;,&quot;tag&quot;:&quot;BAT_I&quot;,&quot;format&quot;:&quot;%.2f A&quot;}"
-          style="font-family:Arial;font-size:12px;font-weight:bold;fill:#2E7D32">0.00 A</text>
+          style="font-family:Arial;font-size:12px;font-weight:bold;fill:#2E7D32"></text>
     <text x="338" y="450" style="font-family:Arial;font-size:10px;fill:#616161">P:</text>
     <text x="352" y="450" id="BAT_P"
           inkscape:label="{&quot;attr&quot;:&quot;text&quot;,&quot;tag&quot;:&quot;BAT_P&quot;,&quot;format&quot;:&quot;%.1f W&quot;}"
-          style="font-family:Arial;font-size:12px;font-weight:bold;fill:#2E7D32">0.0 W</text>
+          style="font-family:Arial;font-size:12px;font-weight:bold;fill:#2E7D32"></text>
     <text x="440" y="450" style="font-family:Arial;font-size:10px;fill:#616161">T:</text>
     <text x="454" y="450" id="BAT_T"
           inkscape:label="{&quot;attr&quot;:&quot;text&quot;,&quot;tag&quot;:&quot;BAT_T&quot;,&quot;format&quot;:&quot;%.1f °C&quot;}"
-          style="font-family:Arial;font-size:12px;font-weight:bold;fill:#E65100">0.0 °C</text>
+          style="font-family:Arial;font-size:12px;font-weight:bold;fill:#E65100"></text>
 
     <!-- ============================================================
          FLUJOS — cable rojo activo / nonee inactivo
@@ -191,12 +169,12 @@
           inkscape:label="{&quot;attr&quot;:&quot;color&quot;,&quot;list&quot;:[{&quot;data&quot;:&quot;false&quot;,&quot;param&quot;:&quot;none|none&quot;,&quot;tag&quot;:&quot;FLOW_PV_LOAD&quot;},{&quot;data&quot;:&quot;true&quot;,&quot;param&quot;:&quot;#C62828|#C62828&quot;,&quot;tag&quot;:&quot;FLOW_PV_LOAD&quot;}]}"
           style="stroke:none;stroke-width:5"/>
     <!-- Panel → Batería: cable rojo bajando -->
-    <line x1="452" y1="121" x2="452" y2="295"
+    <line x1="452" y1="114" x2="452" y2="295"
           id="FLOW_PV_BAT"
           inkscape:label="{&quot;attr&quot;:&quot;color&quot;,&quot;list&quot;:[{&quot;data&quot;:&quot;false&quot;,&quot;param&quot;:&quot;none|none&quot;,&quot;tag&quot;:&quot;FLOW_PV_BAT&quot;},{&quot;data&quot;:&quot;true&quot;,&quot;param&quot;:&quot;#C62828|#C62828&quot;,&quot;tag&quot;:&quot;FLOW_PV_BAT&quot;}]}"
           style="stroke:none;stroke-width:5"/>
     <!-- Batería → Carga: cable negro subiendo -->
-    <line x1="448" y1="295" x2="448" y2="121"
+    <line x1="448" y1="295" x2="448" y2="114"
           id="FLOW_BAT_LOAD"
           inkscape:label="{&quot;attr&quot;:&quot;color&quot;,&quot;list&quot;:[{&quot;data&quot;:&quot;false&quot;,&quot;param&quot;:&quot;none|none&quot;,&quot;tag&quot;:&quot;FLOW_BAT_LOAD&quot;},{&quot;data&quot;:&quot;true&quot;,&quot;param&quot;:&quot;#212121|#212121&quot;,&quot;tag&quot;:&quot;FLOW_BAT_LOAD&quot;}]}"
           style="stroke:none;stroke-width:5"/>
@@ -208,26 +186,22 @@
     <line x1="225" y1="466" x2="225" y2="540" style="stroke:#CFD8DC;stroke-width:1"/>
     <line x1="450" y1="466" x2="450" y2="540" style="stroke:#CFD8DC;stroke-width:1"/>
     <line x1="675" y1="466" x2="675" y2="540" style="stroke:#CFD8DC;stroke-width:1"/>
-    <text x="112" y="484" style="font-family:Arial;font-size:9px;fill:#757575;text-anchor:middle;letter-spacing:1">P PANEL</text>
     <text x="112" y="508" id="TOTAL_PV"
           inkscape:label="{&quot;attr&quot;:&quot;text&quot;,&quot;tag&quot;:&quot;TOTAL_PV&quot;,&quot;format&quot;:&quot;%.1f W&quot;}"
-          style="font-family:Arial;font-size:19px;font-weight:bold;fill:#1565C0;text-anchor:middle">0.0 W</text>
-    <text x="337" y="484" style="font-family:Arial;font-size:9px;fill:#757575;text-anchor:middle;letter-spacing:1">P BATERÍA</text>
+          style="font-family:Arial;font-size:19px;font-weight:bold;fill:#1565C0;text-anchor:middle"></text>
     <text x="337" y="508" id="TOTAL_BAT"
           inkscape:label="{&quot;attr&quot;:&quot;text&quot;,&quot;tag&quot;:&quot;TOTAL_BAT&quot;,&quot;format&quot;:&quot;%.1f W&quot;}"
-          style="font-family:Arial;font-size:19px;font-weight:bold;fill:#2E7D32;text-anchor:middle">0.0 W</text>
-    <text x="562" y="484" style="font-family:Arial;font-size:9px;fill:#757575;text-anchor:middle;letter-spacing:1">P CARGA</text>
+          style="font-family:Arial;font-size:19px;font-weight:bold;fill:#2E7D32;text-anchor:middle"></text>
     <text x="562" y="508" id="TOTAL_LOAD"
           inkscape:label="{&quot;attr&quot;:&quot;text&quot;,&quot;tag&quot;:&quot;TOTAL_LOAD&quot;,&quot;format&quot;:&quot;%.1f W&quot;}"
-          style="font-family:Arial;font-size:19px;font-weight:bold;fill:#E65100;text-anchor:middle">0.0 W</text>
+          style="font-family:Arial;font-size:19px;font-weight:bold;fill:#E65100;text-anchor:middle"></text>
     <rect x="675" y="466" width="225" height="74"
           id="MODE_COLOR"
           inkscape:label="{&quot;attr&quot;:&quot;color&quot;,&quot;list&quot;:[{&quot;data&quot;:&quot;IDLE&quot;,&quot;param&quot;:&quot;none|none&quot;,&quot;tag&quot;:&quot;SYSTEM_MODE&quot;},{&quot;data&quot;:&quot;CHARGE&quot;,&quot;param&quot;:&quot;#1B5E20|#2E7D32&quot;,&quot;tag&quot;:&quot;SYSTEM_MODE&quot;},{&quot;data&quot;:&quot;DISCHARGE&quot;,&quot;param&quot;:&quot;#BF360C|#E64A19&quot;,&quot;tag&quot;:&quot;SYSTEM_MODE&quot;}]}"
           style="fill:none;stroke:none"/>
-    <text x="787" y="484" style="font-family:Arial;font-size:9px;fill:#757575;text-anchor:middle;letter-spacing:1">MODO</text>
     <text x="787" y="508" id="SYSTEM_MODE"
           inkscape:label="{&quot;attr&quot;:&quot;text&quot;,&quot;tag&quot;:&quot;SYSTEM_MODE&quot;}"
-          style="font-family:Arial;font-size:19px;font-weight:bold;fill:#424242;text-anchor:middle">IDLE</text>
+          style="font-family:Arial;font-size:19px;font-weight:bold;fill:#424242;text-anchor:middle"></text>
 
     <text x="880" y="535" style="font-family:Arial;font-size:8px;fill:#455A64;text-anchor:end">PV SCADA v1.1</text>
 
