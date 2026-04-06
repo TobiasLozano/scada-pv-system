@@ -25,8 +25,8 @@
       <stop offset="100%" style="stop-color:#eceff1;stop-opacity:1"/>
     </linearGradient>
     <linearGradient id="panelGradActive" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0%" style="stop-color:#e3f2fd;stop-opacity:1"/>
-      <stop offset="100%" style="stop-color:#bbdefb;stop-opacity:1"/>
+      <stop offset="0%" style="stop-color:#0D47A1;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#1565C0;stop-opacity:1"/>
     </linearGradient>
 
   </defs>
@@ -36,8 +36,6 @@
     <!-- FONDO -->
     <rect width="900" height="540" fill="url(#bgGrad)" id="fondo"/>
 
-    <!-- Titulo -->
-    <text x="450" y="26" style="font-family:Arial;font-size:16px;font-weight:bold;fill:#1565C0;text-anchor:middle">SCADA — Sistema Fotovoltaico</text>
 
     <!-- BUS DC -->
     <line x1="220" y1="114" x2="730" y2="114" style="stroke:#C62828;stroke-width:5"/>
@@ -48,45 +46,38 @@
     ============================================================ -->
     <rect x="30" y="55" width="190" height="115"
           id="PV_STATE_COLOR"
-          inkscape:label="{&quot;attr&quot;:&quot;color&quot;,&quot;list&quot;:[{&quot;data&quot;:&quot;false&quot;,&quot;param&quot;:&quot;#f5f5f5|#9E9E9E&quot;,&quot;tag&quot;:&quot;PV_STATE&quot;},{&quot;data&quot;:&quot;true&quot;,&quot;param&quot;:&quot;#E3F2FD|#1565C0&quot;,&quot;tag&quot;:&quot;PV_STATE&quot;}]}"
-          style="fill:#f5f5f5;stroke:#9E9E9E;stroke-width:2.5"/>
-    <g style="stroke:#90CAF9;stroke-width:0.8;opacity:0.9">
-      <line x1="30"  y1="88"  x2="220" y2="88"/>
-      <line x1="30"  y1="121" x2="220" y2="121"/>
-      <line x1="30"  y1="154" x2="220" y2="154"/>
-      <line x1="68"  y1="55"  x2="68"  y2="170"/>
-      <line x1="106" y1="55"  x2="106" y2="170"/>
-      <line x1="144" y1="55"  x2="144" y2="170"/>
-      <line x1="182" y1="55"  x2="182" y2="170"/>
+          inkscape:label="{&quot;attr&quot;:&quot;color&quot;,&quot;list&quot;:[{&quot;data&quot;:&quot;false&quot;,&quot;param&quot;:&quot;#37474F|#263238&quot;,&quot;tag&quot;:&quot;PV_STATE&quot;},{&quot;data&quot;:&quot;true&quot;,&quot;param&quot;:&quot;#0D47A1|#1565C0&quot;,&quot;tag&quot;:&quot;PV_STATE&quot;}]}"
+          style="fill:#37474F;stroke:#263238;stroke-width:2.5"/>
+    <g style="stroke:#5C8FD6;stroke-width:0.8;opacity:0.85">
+      <line x1="30"  y1="74"  x2="220" y2="74"/>
+      <line x1="30"  y1="93"  x2="220" y2="93"/>
+      <line x1="30"  y1="112" x2="220" y2="112"/>
+      <line x1="30"  y1="131" x2="220" y2="131"/>
+      <line x1="30"  y1="150" x2="220" y2="150"/>
+      <line x1="57"  y1="55"  x2="57"  y2="170"/>
+      <line x1="84"  y1="55"  x2="84"  y2="170"/>
+      <line x1="111" y1="55"  x2="111" y2="170"/>
+      <line x1="138" y1="55"  x2="138" y2="170"/>
+      <line x1="165" y1="55"  x2="165" y2="170"/>
+      <line x1="192" y1="55"  x2="192" y2="170"/>
     </g>
-    <rect x="30" y="55" width="190" height="115" style="fill:url(#panelGradActive);fill-opacity:0.25"/>
-    <circle cx="207" cy="43" r="9" style="fill:#FDD835;stroke:#F9A825;stroke-width:1.5"/>
-    <g style="stroke:#F9A825;stroke-width:1.5;stroke-linecap:round">
-      <line x1="207" y1="29" x2="207" y2="26"/>
-      <line x1="207" y1="57" x2="207" y2="60"/>
-      <line x1="193" y1="43" x2="190" y2="43"/>
-      <line x1="221" y1="43" x2="224" y2="43"/>
-      <line x1="197" y1="33" x2="194" y2="30"/>
-      <line x1="217" y1="53" x2="220" y2="56"/>
-      <line x1="217" y1="33" x2="220" y2="30"/>
-      <line x1="197" y1="53" x2="194" y2="56"/>
-    </g>
+    <rect x="30" y="55" width="190" height="115" style="fill:url(#panelGradActive);fill-opacity:0.45"/>
     <!-- Valores panel -->
-    <rect x="30" y="182" width="190" height="85" style="fill:#ffffff;stroke:#CFD8DC;stroke-width:1.5"/>
-    <text x="38" y="197" style="font-family:Arial;font-size:10px;fill:#616161">V:</text>
-    <text x="54" y="197" id="PV_V"
+    <rect x="30" y="182" width="190" height="90" style="fill:#ffffff;stroke:#CFD8DC;stroke-width:1.5"/>
+    <text x="38" y="203" style="font-family:Arial;font-size:10px;fill:#616161">V:</text>
+    <text x="54" y="203" id="PV_V"
           inkscape:label="{&quot;attr&quot;:&quot;text&quot;,&quot;tag&quot;:&quot;PV_V&quot;,&quot;format&quot;:&quot;%.2f V&quot;}"
-          style="font-family:Arial;font-size:10px;font-weight:bold;fill:#1565C0"></text>
-    <text x="38" y="217" style="font-family:Arial;font-size:10px;fill:#616161">I:</text>
-    <text x="54" y="217" id="PV_I"
+          style="font-family:Arial;font-size:20px;font-weight:bold;fill:#1565C0"></text>
+    <text x="38" y="225" style="font-family:Arial;font-size:10px;fill:#616161">I:</text>
+    <text x="54" y="225" id="PV_I"
           inkscape:label="{&quot;attr&quot;:&quot;text&quot;,&quot;tag&quot;:&quot;PV_I&quot;,&quot;format&quot;:&quot;%.2f A&quot;}"
           style="font-family:Arial;font-size:10px;font-weight:bold;fill:#1565C0"></text>
-    <text x="38" y="237" style="font-family:Arial;font-size:10px;fill:#616161">T:</text>
-    <text x="54" y="237" id="PV_T"
+    <text x="38" y="245" style="font-family:Arial;font-size:10px;fill:#616161">T:</text>
+    <text x="54" y="245" id="PV_T"
           inkscape:label="{&quot;attr&quot;:&quot;text&quot;,&quot;tag&quot;:&quot;PV_T&quot;,&quot;format&quot;:&quot;%.1f °C&quot;,&quot;coloralarm&quot;:&quot;#C62828&quot;}"
           style="font-family:Arial;font-size:10px;font-weight:bold;fill:#E65100"></text>
-    <text x="38" y="257" style="font-family:Arial;font-size:10px;fill:#616161">P:</text>
-    <text x="54" y="257" id="PV_P"
+    <text x="38" y="265" style="font-family:Arial;font-size:10px;fill:#616161">P:</text>
+    <text x="54" y="265" id="PV_P"
           inkscape:label="{&quot;attr&quot;:&quot;text&quot;,&quot;tag&quot;:&quot;PV_P&quot;,&quot;format&quot;:&quot;%.1f W&quot;}"
           style="font-family:Arial;font-size:10px;font-weight:bold;fill:#1565C0"></text>
 
@@ -107,56 +98,61 @@
     <rect x="766" y="164" width="34" height="7" rx="2" style="fill:#757575"/>
     <rect x="769" y="171" width="28" height="5" rx="2" style="fill:#616161"/>
     <!-- Valores carga -->
-    <rect x="690" y="182" width="185" height="65" style="fill:#ffffff;stroke:#CFD8DC;stroke-width:1.5"/>
-    <text x="698" y="197" style="font-family:Arial;font-size:10px;fill:#616161">V:</text>
-    <text x="714" y="197" id="LOAD_V"
+    <rect x="690" y="182" width="185" height="70" style="fill:#ffffff;stroke:#CFD8DC;stroke-width:1.5"/>
+    <text x="698" y="203" style="font-family:Arial;font-size:10px;fill:#616161">V:</text>
+    <text x="714" y="203" id="LOAD_V"
           inkscape:label="{&quot;attr&quot;:&quot;text&quot;,&quot;tag&quot;:&quot;LOAD_V&quot;,&quot;format&quot;:&quot;%.2f V&quot;}"
-          style="font-family:Arial;font-size:10px;font-weight:bold;fill:#E65100"></text>
-    <text x="698" y="217" style="font-family:Arial;font-size:10px;fill:#616161">I:</text>
-    <text x="714" y="217" id="LOAD_I"
+          style="font-family:Arial;font-size:20px;font-weight:bold;fill:#E65100"></text>
+    <text x="698" y="225" style="font-family:Arial;font-size:10px;fill:#616161">I:</text>
+    <text x="714" y="225" id="LOAD_I"
           inkscape:label="{&quot;attr&quot;:&quot;text&quot;,&quot;tag&quot;:&quot;LOAD_I&quot;,&quot;format&quot;:&quot;%.2f A&quot;}"
           style="font-family:Arial;font-size:10px;font-weight:bold;fill:#E65100"></text>
-    <text x="698" y="237" style="font-family:Arial;font-size:10px;fill:#616161">P:</text>
-    <text x="714" y="237" id="LOAD_P"
+    <text x="698" y="245" style="font-family:Arial;font-size:10px;fill:#616161">P:</text>
+    <text x="714" y="245" id="LOAD_P"
           inkscape:label="{&quot;attr&quot;:&quot;text&quot;,&quot;tag&quot;:&quot;LOAD_P&quot;,&quot;format&quot;:&quot;%.1f W&quot;}"
           style="font-family:Arial;font-size:10px;font-weight:bold;fill:#E65100"></text>
 
     <!-- BUS -> BATERIA -->
-    <line x1="450" y1="114" x2="450" y2="295" style="stroke:#C62828;stroke-width:5"/>
-    <line x1="430" y1="158" x2="430" y2="295" style="stroke:#212121;stroke-width:5"/>
+    <line x1="450" y1="114" x2="450" y2="265" style="stroke:#C62828;stroke-width:5"/>
+    <line x1="430" y1="158" x2="430" y2="391" style="stroke:#212121;stroke-width:5"/>
 
     <!-- ============================================================
          BATERIA — fila 2 centro
     ============================================================ -->
-    <rect x="330" y="295" width="240" height="95"
+    <!-- Terminal superior -->
+    <rect x="424" y="265" width="52" height="14" rx="6" style="fill:#CFD8DC;stroke:#90A4AE;stroke-width:1.5"/>
+    <!-- Cuerpo batería -->
+    <rect x="392" y="278" width="116" height="113" rx="10"
           id="BAT_BODY"
-          inkscape:label="{&quot;attr&quot;:&quot;color&quot;,&quot;list&quot;:[{&quot;data&quot;:&quot;false&quot;,&quot;param&quot;:&quot;#f5f5f5|#9E9E9E&quot;,&quot;tag&quot;:&quot;BAT_STATE&quot;},{&quot;data&quot;:&quot;true&quot;,&quot;param&quot;:&quot;#E8F5E9|#2E7D32&quot;,&quot;tag&quot;:&quot;BAT_STATE&quot;}]}"
-          style="fill:#f5f5f5;stroke:#9E9E9E;stroke-width:2.5"/>
-    <rect x="570" y="322" width="14" height="36" rx="2" style="fill:#9E9E9E;stroke:#757575;stroke-width:1"/>
-    <text x="577" y="344" style="font-family:Arial;font-size:11px;font-weight:bold;fill:#C62828;text-anchor:middle">+</text>
-    <rect x="316" y="322" width="14" height="36" rx="2" style="fill:#9E9E9E;stroke:#757575;stroke-width:1"/>
-    <text x="323" y="344" style="font-family:Arial;font-size:11px;font-weight:bold;fill:#212121;text-anchor:middle">−</text>
-    <circle cx="571" cy="299" r="9"
+          inkscape:label="{&quot;attr&quot;:&quot;color&quot;,&quot;list&quot;:[{&quot;data&quot;:&quot;false&quot;,&quot;param&quot;:&quot;#37474F|#263238&quot;,&quot;tag&quot;:&quot;BAT_STATE&quot;},{&quot;data&quot;:&quot;true&quot;,&quot;param&quot;:&quot;#2D2850|#1A1730&quot;,&quot;tag&quot;:&quot;BAT_STATE&quot;}]}"
+          style="fill:#2D2850;stroke:#1A1730;stroke-width:3"/>
+    <!-- Sección naranja superior -->
+    <rect x="395" y="281" width="110" height="38" rx="8" style="fill:#D84315;stroke:none"/>
+    <!-- Rayo -->
+    <polygon points="460,306 442,337 454,337 440,362 461,327 449,327"
+             style="fill:#FDD835;stroke:#E65100;stroke-width:2;stroke-linejoin:round"/>
+    <!-- Alarma temperatura -->
+    <circle cx="505" cy="285" r="9"
             id="BAT_T_ALARM"
             inkscape:label="{&quot;attr&quot;:&quot;color&quot;,&quot;list&quot;:[{&quot;data&quot;:&quot;false&quot;,&quot;param&quot;:&quot;#e0e0e0|#9E9E9E&quot;,&quot;tag&quot;:&quot;BAT_T_ALARM&quot;},{&quot;data&quot;:&quot;true&quot;,&quot;param&quot;:&quot;#C62828|#B71C1C&quot;,&quot;tag&quot;:&quot;BAT_T_ALARM&quot;}]}"
             style="fill:#e0e0e0;stroke:#9E9E9E;stroke-width:1.5"/>
-    <text x="571" y="303" style="font-family:Arial;font-size:7px;font-weight:bold;fill:#424242;text-anchor:middle">T!</text>
+    <text x="505" y="289" style="font-family:Arial;font-size:7px;font-weight:bold;fill:#424242;text-anchor:middle">T!</text>
     <!-- Valores bateria -->
-    <rect x="330" y="398" width="240" height="48" style="fill:#ffffff;stroke:#CFD8DC;stroke-width:1.5"/>
-    <text x="338" y="414" style="font-family:Arial;font-size:10px;fill:#616161">V:</text>
-    <text x="352" y="414" id="BAT_V"
+    <rect x="330" y="396" width="240" height="70" style="fill:#ffffff;stroke:#CFD8DC;stroke-width:1.5"/>
+    <text x="338" y="417" style="font-family:Arial;font-size:10px;fill:#616161">V:</text>
+    <text x="354" y="417" id="BAT_V"
           inkscape:label="{&quot;attr&quot;:&quot;text&quot;,&quot;tag&quot;:&quot;BAT_V&quot;,&quot;format&quot;:&quot;%.2f V&quot;}"
-          style="font-family:Arial;font-size:10px;font-weight:bold;fill:#2E7D32"></text>
-    <text x="440" y="414" style="font-family:Arial;font-size:10px;fill:#616161">I:</text>
-    <text x="454" y="414" id="BAT_I"
+          style="font-family:Arial;font-size:20px;font-weight:bold;fill:#2E7D32"></text>
+    <text x="338" y="440" style="font-family:Arial;font-size:10px;fill:#616161">I:</text>
+    <text x="354" y="440" id="BAT_I"
           inkscape:label="{&quot;attr&quot;:&quot;text&quot;,&quot;tag&quot;:&quot;BAT_I&quot;,&quot;format&quot;:&quot;%.2f A&quot;}"
           style="font-family:Arial;font-size:10px;font-weight:bold;fill:#2E7D32"></text>
-    <text x="338" y="434" style="font-family:Arial;font-size:10px;fill:#616161">P:</text>
-    <text x="352" y="434" id="BAT_P"
+    <text x="338" y="460" style="font-family:Arial;font-size:10px;fill:#616161">P:</text>
+    <text x="354" y="460" id="BAT_P"
           inkscape:label="{&quot;attr&quot;:&quot;text&quot;,&quot;tag&quot;:&quot;BAT_P&quot;,&quot;format&quot;:&quot;%.1f W&quot;}"
           style="font-family:Arial;font-size:10px;font-weight:bold;fill:#2E7D32"></text>
-    <text x="440" y="434" style="font-family:Arial;font-size:10px;fill:#616161">T:</text>
-    <text x="454" y="434" id="BAT_T"
+    <text x="440" y="460" style="font-family:Arial;font-size:10px;fill:#616161">T:</text>
+    <text x="454" y="460" id="BAT_T"
           inkscape:label="{&quot;attr&quot;:&quot;text&quot;,&quot;tag&quot;:&quot;BAT_T&quot;,&quot;format&quot;:&quot;%.1f °C&quot;}"
           style="font-family:Arial;font-size:10px;font-weight:bold;fill:#E65100"></text>
 
@@ -169,12 +165,12 @@
           inkscape:label="{&quot;attr&quot;:&quot;color&quot;,&quot;list&quot;:[{&quot;data&quot;:&quot;false&quot;,&quot;param&quot;:&quot;none|none&quot;,&quot;tag&quot;:&quot;FLOW_PV_LOAD&quot;},{&quot;data&quot;:&quot;true&quot;,&quot;param&quot;:&quot;#C62828|#C62828&quot;,&quot;tag&quot;:&quot;FLOW_PV_LOAD&quot;}]}"
           style="stroke:none;stroke-width:5"/>
     <!-- Panel → Batería: cable rojo bajando -->
-    <line x1="452" y1="114" x2="452" y2="295"
+    <line x1="452" y1="114" x2="452" y2="278"
           id="FLOW_PV_BAT"
           inkscape:label="{&quot;attr&quot;:&quot;color&quot;,&quot;list&quot;:[{&quot;data&quot;:&quot;false&quot;,&quot;param&quot;:&quot;none|none&quot;,&quot;tag&quot;:&quot;FLOW_PV_BAT&quot;},{&quot;data&quot;:&quot;true&quot;,&quot;param&quot;:&quot;#C62828|#C62828&quot;,&quot;tag&quot;:&quot;FLOW_PV_BAT&quot;}]}"
           style="stroke:none;stroke-width:5"/>
     <!-- Batería → Carga: cable negro subiendo -->
-    <line x1="448" y1="295" x2="448" y2="114"
+    <line x1="448" y1="278" x2="448" y2="114"
           id="FLOW_BAT_LOAD"
           inkscape:label="{&quot;attr&quot;:&quot;color&quot;,&quot;list&quot;:[{&quot;data&quot;:&quot;false&quot;,&quot;param&quot;:&quot;none|none&quot;,&quot;tag&quot;:&quot;FLOW_BAT_LOAD&quot;},{&quot;data&quot;:&quot;true&quot;,&quot;param&quot;:&quot;#212121|#212121&quot;,&quot;tag&quot;:&quot;FLOW_BAT_LOAD&quot;}]}"
           style="stroke:none;stroke-width:5"/>
